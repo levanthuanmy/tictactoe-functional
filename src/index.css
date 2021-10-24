@@ -1,0 +1,100 @@
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+}
+
+ol,
+ul {
+  padding-left: 30px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  height: 50px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+}
+
+.active-square {
+  background: rgb(231, 119, 132) !important;
+}
+
+button:focus {
+  outline: none;
+  background-color: rgb(122, 227, 253);
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-info {
+  margin-right: 20px;
+  padding: 10px;
+  border: solid 1px lightgray;
+  border-radius: 3px;
+}
+
+.btn-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-wrapper button {
+  width: 200px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+
+.hightlight-btn {
+  background-color: rgb(122, 227, 253);
+  outline: none;
+  border-color: rgb(122, 227, 253);
+}
+
+.status {
+  padding-bottom: 5px;
+  font-size: xx-large;
+  font-weight: medium;
+}
+
+.wrapper-history {
+  border: solid 1px lightgray;
+  border-radius: 4px;
+  padding: 5px;
+  height: 400px;
+  width: 200px;
+  overflow-y: auto;
+}
+
+.wrapper-history button {
+  width: 100%;
+  border: none;
+  padding: 5px;
+}
